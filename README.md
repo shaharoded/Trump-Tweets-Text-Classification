@@ -1,7 +1,9 @@
 # Trump-Tweets-Text-Classification
 
 This project involves optimizing a series of models to predict whether a tweet was written by Donald Trump or not. The optimization process utilized various machine learning and deep learning models to achieve the best possible performance.
+
 ![Alt text](Images/TWEET.png)
+
 You will find 3 notebooks here:
 - API - the main notebook, with the already trained models, ready for usage
 - Model Creation - The flow and tests to optimize Sci-Kit's models using Optuna
