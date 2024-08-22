@@ -78,6 +78,14 @@ The use of TF-IDF combined with engineered features yielded the best results for
 
 XGBoost was the most effective model for this task, balancing performance and interpretability. DistilBERT showed promise but required more computational resources. Feature engineering, particularly TF-IDF and additional features, played a crucial role in improving model performance.
 
+## Possible improvements
+
+ - Use feature selection on the feature vector (mutual information?)
+ - Add NER / POS as features to the vector
+ - Add more calculated ratio features.
+ - Attempt vector combination with GloVe
+ - Show meaningfull features in the decision process
+
 ## Usage (in the API notebook)
 
 To use the models and run predictions, follow these steps:
