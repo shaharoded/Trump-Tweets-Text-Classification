@@ -1,13 +1,15 @@
 # Trump-Tweets-Text-Classification
 
 This project involves optimizing a series of models to predict whether a tweet was written by Donald Trump or not. The optimization process utilized various machine learning and deep learning models to achieve the best possible performance.
+The main goal in this project is to create a robust workflow to optimize ML models to text classification tasks in order to gain the best results.
+The code in this project, especially in the Model Creation and BERT notebooks can be used for every binary text classification task, with an adjustment of the target variable and the feature extraction (to the nature of the task).
 
 ![Alt text](Images/TWEET.png)
 
 You will find 3 notebooks here:
-- API - the main notebook, with the already trained models, ready for usage
-- Model Creation - The flow and tests to optimize Sci-Kit's models using Optuna
+- Model Creation - The flow and tests to optimize Sci-Kit's models using Optuna. This is the main code piece here, showing a robust flow to train and optimize a variety of model given pre-engineered and selected features.
 - BERT - Finetuning process for BERT, RoBERTa and DistilBERT. You will need GPU to train those.
+- API - the main notebook, with the already trained models, ready for usage.
 
 ## Table of Contents
 
@@ -54,7 +56,7 @@ Each model was fine-tuned to achieve the best performance.
 We used various feature engineering techniques to improve model performance, including:
 
 - **TF-IDF Vectorization**: Transforms text data into numerical features.
-- **Additional Features**: Extracted from the tweet text and metadata, such as the number of capitalized words, punctuation, and timestamp features.
+- **Additional Features**: Extracted from the tweet text and metadata, such as the number of capitalized words, punctuation, and timestamp features. NER / POS and speech type were also added as features to the vector. These features should be suited to the identification of the speaker based on the speech type and the way they express themselves online.
 
 ## Hyperparameter Optimization
 
@@ -70,21 +72,11 @@ Optuna helped identify the best combinations, significantly improving model perf
 
 ## Results
 
-The best-performing model was XGBoost, achieving an F1 score of 0.89 with the optimized hyperparameters. DistilBERT also showed excellent performance, albeit with higher computational costs. The optimized hyperparameters for each model are provided in the results table.
-
-The use of TF-IDF combined with engineered features yielded the best results for most models. Word2Vec was not as effective due to the small dataset size.
+The best-performing model was XGBoost, achieving an F1 score of 0.88 with the optimized hyperparameters. DistilBERT also showed excellent performance, albeit with higher computational costs. The optimized hyperparameters for each model are provided in the results table.
 
 ## Conclusion
 
 XGBoost was the most effective model for this task, balancing performance and interpretability. DistilBERT showed promise but required more computational resources. Feature engineering, particularly TF-IDF and additional features, played a crucial role in improving model performance.
-
-## Possible improvements
-
- - Use feature selection on the feature vector (mutual information?)
- - Add NER / POS as features to the vector
- - Add more calculated ratio features.
- - Attempt vector combination with GloVe
- - Show meaningfull features in the decision process
 
 ## Usage (in the API notebook)
 
