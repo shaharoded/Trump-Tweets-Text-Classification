@@ -8,8 +8,8 @@ The code in this project, especially in the Model Creation and BERT notebooks ca
 
 You will find 3 notebooks here:
 - Model Creation - The flow and tests to optimize Sci-Kit's models using Optuna. This is the main code piece here, showing a robust flow to train and optimize a variety of model given pre-engineered and selected features.
-- BERT - Finetuning process for BERT, RoBERTa and DistilBERT. You will need GPU to train those.
-- API - the main notebook, with the already trained models, ready for usage.
+- BERT - Finetuning process for BERT, RoBERTa and DistilBERT. You will need a GPU to train those.
+- API - the main notebook, with the already optimized models parameters, ready for simple train and usage.
 
 ## Table of Contents
 
@@ -25,7 +25,7 @@ You will find 3 notebooks here:
 
 ## Introduction
 
-The goal of this project is to classify tweets as either written by Donald Trump or not. We used a variety of machine learning and deep learning models, including logistic regression, SVM, XGBoost, and DistilBERT, to achieve this task.
+The goal of this project is to classify tweets as either written by Donald Trump or not. I used a variety of machine learning and deep learning models, including logistic regression, SVM, XGBoost, and DistilBERT, to achieve this task.
 
 ## Dataset
 
@@ -41,7 +41,7 @@ The dataset is preprocessed to remove noise and irrelevant information, focusing
 
 ## Models
 
-We experimented with several models, including:
+I experimented with several models, including:
 
 1. **Logistic Regression**
 2. **Support Vector Machine (SVM)**
